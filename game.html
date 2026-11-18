@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра — Зомби против Растений</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="game-page">
+
+    <div class="game-container">
+        <!-- Шапка: Солнце и Уровень -->
+        <header class="game-header">
+            <div class="balance">
+                <span>☀️ Солнце:</span>
+                <span id="sunDisplay">50</span>
+            </div>
+            <div class="income">
+                <span>🧟 Волна:</span>
+                <span id="waveDisplay">1</span>
+            </div>
+        </header>
+
+        <!-- Игровое поле: Растения и Зомби -->
+        <main class="game-main">
+            <!-- Левая часть: Поле боя -->
+            <div class="farm-area">
+                <div id="battlefield" class="battlefield">
+                    <!-- Сюда будут добавляться зомби и растения -->
+                </div>
+                <!-- Кнопка сбора солнца (как в оригинале) -->
+                <button id="sunClicker" class="sun-btn">☀️</button>
+                <p class="hint">Нажимай на солнце, чтобы получать энергию!</p>
+            </div>
+
+            <!-- Правая часть: Магазин растений -->
+            <aside class="shop">
+                <h2>🌱 Магазин</h2>
+                <div id="shopItems">
+                    <!-- Сюда JS будет добавлять кнопки покупки -->
+                </div>
+            </aside>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="game-footer">
+            <a href="index.html" class="btn btn-back">← В меню</a>
+            <a href="rules.html" class="btn btn-rules">📖 Правила</a>
+            <button id="logoutBtn" class="btn btn-rules" style="background:#ef4444;">🚪 Выйти</button>
+        </footer>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
